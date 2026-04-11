@@ -1,6 +1,6 @@
 import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// import App from './App.jsx'
+import App from './App.jsx'
 
 // function MyApp() {
 //   return (
@@ -18,14 +18,14 @@ import { createRoot } from 'react-dom/client'
 //   "Click To Visit Google"
 // )
 
-const AnotherElement = () => (
-  <a href="https://google.com" target='_blank'> Click Me</a>
-)
+// const AnotherElement = () => (
+//   <a href="https://google.com" target='_blank'> Click Me</a>
+// )
 
 createRoot(document.getElementById('root')).render(
   <>
    
-    <AnotherElement />
+    <App />
     </>
   )
   
