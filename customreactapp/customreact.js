@@ -1,15 +1,15 @@
 const customRender = (reactElement , divcontainer) =>{
 
 // let Domelement = document.createElement(reactElement.type);
-// Domelement.innerHTML = reactElement.childern
+// Domelement.innerHTML = reactElement.children
 // Domelement.setAttribute("href" , reactElement.props.href)
 // Domelement.setAttribute("target" , reactElement.props.target)
 // divcontainer.appendChild(Domelement)
 
 let Domelement = document.createElement(reactElement.type);
-Domelement.innerHTML = reactElement.childern
+Domelement.innerHTML = reactElement.children
 for (const prop in reactElement.props) {
-    if (prop === "childern") continue;
+    if (prop === "children") continue;
     
    Domelement.setAttribute(prop , reactElement.props[prop])
     
@@ -23,7 +23,7 @@ const reactElement = {
         href: "https://google.com",
         target : "_blank"
     },
-    childern: "Click Me To Visit Google"
+    children: "Click Me To Visit Google"
 }
 
 
@@ -35,4 +35,3 @@ customRender(reactElement , MainRoot)
 
 
 
-//  {/* {createReactelement} { /*This IS The Way To Get Evalated Expression  In React This evalutaed Expression Is Called Getting THe Output Of Varibale */ } */}
