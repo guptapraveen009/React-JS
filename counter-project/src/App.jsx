@@ -8,7 +8,7 @@ let App = () =>{
     setCounter(counter + 1)
   }
   const decreasevalue = () => {
-    if(counter >= 0) {
+    if(counter > 0) {
       setCounter(counter - 1)
     }
    
